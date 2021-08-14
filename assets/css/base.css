@@ -2,6 +2,8 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+    --primary-color: #EE4D2D;
+    --border-color: #dbdbdb;
 }
 
 * {
@@ -60,8 +62,57 @@ html {
 
 .modal__body {
     position: relative;
-    background-color: var(--white-color);
     margin: auto;
-    border-radius: 5px;
     z-index: 1;
+}
+
+
+/* button */
+
+.btn {
+    min-width: 142px;
+    height: 34px;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 300;
+    border-radius: 2px;
+    background-color: var(--white-color);
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn.btn--normal:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.btn.btn--size-s {
+    height: 30px;
+    font-size: 1.2rem;
+    padding: 0 8px;
+}
+
+.btn.btn--primary {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.btn.btn--disable {
+    color: #949494;
+    cursor: default;
+    background-color: #c3c3c3;
+}
+
+
+/*logo google color*/
+
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
