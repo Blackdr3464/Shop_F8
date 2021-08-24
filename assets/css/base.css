@@ -193,6 +193,7 @@ html {
     list-style: none;
     background-color: var(--white-color);
     display: none;
+    z-index: 1;
 }
 
 .select-input__list::before {
@@ -220,3 +221,40 @@ html {
 .select-input__link:hover {
     color: var(--primary-color);
 }
+
+
+/* pagination */
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.pagination-item {
+    margin: 0 12px 0;
+}
+
+.pagination-item--active .pagination-item__link {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.pagination-item--active .pagination-item__link:hover {
+    background-color: #ed5c3f;
+}
+
+.pagination-item__link {
+    display: block;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #969696;
+    min-width: 40px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.pagination-item__icon {}
