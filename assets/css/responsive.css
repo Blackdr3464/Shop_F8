@@ -113,6 +113,13 @@
     .footer-content {
         padding: 0 16px;
     }
+    .footer-heading {
+        text-align: center;
+    }
+    .footer__download,
+    .footer-item__link {
+        justify-content: center;
+    }
     @keyframes mobileSearch {
         from {
             opacity: 0;
