@@ -267,8 +267,6 @@ html {
     list-style: none;
 }
 
-.footer-item {}
-
 .footer-item__link {
     display: flex;
     align-items: center;
