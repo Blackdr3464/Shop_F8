@@ -1,3 +1,7 @@
+.app {
+    overflow: hidden;
+}
+
 .header {
     height: var(--header-height);
     background-image: linear-gradient(0, #fe6433, #f53e2d);
@@ -483,6 +487,15 @@
     padding: 0 8px;
 }
 
+.header__mobile-search {
+    display: none;
+}
+
+.header__mobile-search-icon {
+    font-size: 2.6rem;
+    color: var(--white-color);
+}
+
 .header__logo {
     width: 200px;
 }
@@ -490,6 +503,7 @@
 .header__logo-link {
     text-decoration: none;
     color: transparent;
+    display: block;
 }
 
 .header__logo-img {
@@ -514,6 +528,7 @@
     position: relative;
     display: inline-block;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .header__cart-wrap:hover .header__cart-list {
@@ -985,6 +1000,63 @@
 }
 
 
+/* mobile category */
+
+.mobile-category {
+    display: none;
+}
+
+.mobile-category__list {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+.mobile-category__list::-webkit-scrollbar {
+    display: none;
+}
+
+.mobile-category__item {
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.mobile-category__item:nth-of-type(3n + 1) .mobile-category__link {
+    background-color: #87AFD8;
+}
+
+.mobile-category__item:nth-of-type(3n + 2) .mobile-category__link {
+    background-color: #76C9BD;
+}
+
+.mobile-category__item:nth-of-type(3n + 3) .mobile-category__link {
+    background-color: #88CF81;
+}
+
+.mobile-category__link {
+    --line-height: 2rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+    line-height: var(--line-height);
+    height: calc(var(--line-height) * 2);
+    color: var(--white-color);
+    display: block;
+    width: 110px;
+    border-radius: 4px;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    font-weight: 300;
+    user-select: none;
+    --webkit-user-select: none;
+    padding: 0 6px;
+}
+
+
 /* Home filter */
 
 .home-filter {
@@ -1243,4 +1315,5 @@
 
 .home-product__pagination {
     margin: 48px 0 32px 0;
+    padding-left: 0;
 }
